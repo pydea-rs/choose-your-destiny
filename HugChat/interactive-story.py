@@ -9,7 +9,7 @@ email: str = str(config('email', 'email'))
 password: str = str(config('password', 'password'))
 
 interface = HugchatInterface(email, password)
-query_result = interface.activate("I want you to generate a random interactive story with random genre. Then inside the stpry, as story is going give the me choices, then i will input my choice and you should continue the story with my decisions. return ENDOFGAME when the story is completed.")
+query_result = interface.activate("Generate a random interactive story with random genre. Then inside the stpry, as story is going give the me choices, then i will input my choice and you should continue the story with my decisions. return ENDOFGAME when the story is completed.")
 print(query_result)
 
 if interface.active_model:
