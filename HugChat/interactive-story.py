@@ -1,7 +1,7 @@
 import random
 import time
 
-from HugChat.hugchat_interface import HugchatInterface
+from hugchat_interface import HugchatInterface
 from decouple import config
 
 
